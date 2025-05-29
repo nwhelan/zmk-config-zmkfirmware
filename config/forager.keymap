@@ -15,6 +15,7 @@
 #define AS(keycode) &as LS(keycode) keycode// Autoshift Macro
 #define MEH LS(LC(LALT))
 
+#include "combos.dtsi"
 
 &lt {
 	// require-prior-idle-ms = <100>;
