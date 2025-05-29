@@ -31,9 +31,9 @@ layers:
   - {t: ',', h: 'Sft+,'}
   - {t: ., h: Sft+.}
   - {t: /, h: Sft+/}
+  - SPACE
+  - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, h: sym, s: Alt+BSPC}
-  - {t: LSHFT, h: sticky, s: '&caps_word'}
-  - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: SPACE, h: nav}
   nav:
   - {t: ▽, type: trans}
@@ -66,9 +66,9 @@ layers:
   - END
   - Ctl+SPACE
   - Ctl+SPACE
-  - sym
-  - LSHFT
   - {t: ▽, type: trans}
+  - LSHFT
+  - sym
   - {type: held}
   sym:
   - {t: '1', h: Sft+1}
@@ -101,9 +101,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - {type: held}
   - {t: ▽, type: trans}
-  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: LSHFT, type: held}
   - nav
   adj:
   - {t: BT, h: '0'}
@@ -136,7 +136,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
