@@ -8,6 +8,8 @@
 #define SYM  2
 #define ADJ  3
 
+#include "combos.dtsi"
+
 #define ___ &trans
 #define XXX &none
 
@@ -101,20 +103,6 @@
 			then-layer = <3>;
 		};
 	};
-
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-    };
 	
 	keymap {
 		compatible = "zmk,keymap";
