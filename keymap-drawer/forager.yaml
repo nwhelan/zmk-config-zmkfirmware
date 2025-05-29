@@ -143,3 +143,5 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
+- p: [10, 11]
+  k: TAB
