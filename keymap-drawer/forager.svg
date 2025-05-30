@@ -282,12 +282,8 @@ path.combo {
 <text x="0" y="24" class="key hold layer-activator">nav</text>
 </a></g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="40" width="28" height="26" class="combo"/>
-<text x="56" y="53" class="combo tap">ESC</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
-<text x="56" y="109" class="combo tap">TAB</text>
+<text x="56" y="109" class="combo tap">ESC</text>
 </g>
 </g>
 </g>
@@ -443,12 +439,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="40" width="28" height="26" class="combo"/>
-<text x="56" y="53" class="combo tap">ESC</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
-<text x="56" y="109" class="combo tap">TAB</text>
+<text x="56" y="109" class="combo tap">ESC</text>
 </g>
 </g>
 </g>
@@ -615,12 +607,8 @@ path.combo {
 <text x="0" y="0" class="key tap layer-activator">nav</text>
 </a></g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="40" width="28" height="26" class="combo"/>
-<text x="56" y="53" class="combo tap">ESC</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
-<text x="56" y="109" class="combo tap">TAB</text>
+<text x="56" y="109" class="combo tap">ESC</text>
 </g>
 </g>
 </g>
@@ -776,12 +764,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="40" width="28" height="26" class="combo"/>
-<text x="56" y="53" class="combo tap">ESC</text>
-</g>
-<g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
-<text x="56" y="109" class="combo tap">TAB</text>
+<text x="56" y="109" class="combo tap">ESC</text>
 </g>
 </g>
 </g>

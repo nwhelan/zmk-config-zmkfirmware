@@ -141,7 +141,5 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [0, 1]
-  k: ESC
 - p: [10, 11]
-  k: TAB
+  k: ESC
