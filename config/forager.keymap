@@ -105,42 +105,14 @@
 	
 	combos {
 		compatible = "zmk,combos";
-		COMBO(esc, &kp ESC, 10 11, , 80, 50) 
-		// tab = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <10 11>;
-		// 	bindings = <&kp tab>;
-		// };
-		// open_brace = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <1 11>;
-		// 	bindings = <&kp LBRC>;
-		// };
-		// close_brace = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <1 1>;
-		// 	bindings = <&kp RBRC>;
-		// };
-		// open_bracket = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <1 11>;
-		// 	bindings = <&kp LBKT>;
-		// };
-		// close_bracket = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <1 1>;
-		// 	bindings = <&kp RBKT>;
-		// };
-		// open_paren = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <0 1>;
-		// 	bindings = <&kp LPAR>;
-		// };
-		// close_paren = {
-		// 	timeout-ms = <50>;
-		// 	key-positions = <0 1>;
-		// 	bindings = <&kp RPAR>;
-		// };
+		COMBO(esc, &kp ESC, 0 1, , 80, 50)
+		COMBO(tab, &kp TAB, 10 11, , 80, 50)
+		COMBO(open_brace, &kp LBRC, 1 11, , 80, 50)
+		COMBO(open_bracket, &kp LBKT, 2 12, , 80, 50)
+		COMBO(open_paren, &kp LPAR, 3 13, , 80, 50)
+		COMBO(close_brace, &kp RBRC, 6 16, , 80, 50)
+		COMBO(close_bracket, &kp RBKT, 7 17, , 80, 50)
+		COMBO(close_paren, &kp RPAR, 8 18, , 80, 50)
 	};
 	
 	conditional_layers {
