@@ -143,7 +143,10 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
+  l: [base]
 - p: [10, 11]
   k: TAB
+  l: [base]
 - p: [2, 12]
   k: {t: '[', h: 'Sft+['}
+  l: [base]
