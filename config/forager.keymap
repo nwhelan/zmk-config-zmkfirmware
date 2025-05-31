@@ -107,13 +107,13 @@
 		COMBO(esc, &kp ESC, 0 1, BASE, 80, 50)
 		COMBO(tab, &kp TAB, 10 11, BASE, 80, 50)
 		COMBO(open_bracket, AS(LBKT), 2 12, BASE, 80, 50)
-		/* COMBO(open_paren, &kp LPAR, 3 13, , 80, 50)
-		COMBO(close_paren, &kp RPAR, 6 16, , 80, 50)
-		COMBO(close_bracket, &as LS(RBKT) RBKT, 7 17, , 80, 50)
-		COMBO(pg_up, &kp PG_UP, 5 6, , 80, 50)
-		COMBO(pg_dn, &kp PG_DN, 15 16, , 80, 50)
-		COMBO(home, &kp HOME, 4 3, , 80, 50)
-		COMBO(end, &kp END, 14 13, , 80, 50) */
+		COMBO(open_paren, &kp LPAR, 3 13, BASE, 80, 50)
+		COMBO(close_paren, &kp RPAR, 6 16, BASE, 80, 50)
+		COMBO(close_bracket, AS(RBKT), 7 17, BASE, 80, 50)
+		COMBO(pg_up, &kp PG_UP, 5 6, BASE, 80, 50)
+		COMBO(pg_dn, &kp PG_DN, 15 16, BASE, 80, 50)
+		COMBO(home, &kp HOME, 4 3, BASE, 80, 50)
+		COMBO(end, &kp END, 14 13, BASE, 80, 50) */
 	};
 	
 	conditional_layers {
