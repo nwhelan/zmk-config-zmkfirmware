@@ -291,8 +291,9 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="126" y="43" width="28" height="26" class="combo"/>
-<text x="140" y="56" class="combo tap">[</text>
-<text x="140" y="67" class="combo hold">Sft+[</text>
+<text x="140" y="56" class="combo tap">
+<tspan x="140" dy="-0.6em" style="font-size: 88%">&amp;as</tspan><tspan x="140" dy="1.2em" style="font-size: 88%">LS(LBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="182" y="53" width="28" height="26" class="combo"/>
@@ -304,8 +305,9 @@ path.combo {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="546" y="43" width="28" height="26" class="combo"/>
-<text x="560" y="56" class="combo tap">]</text>
-<text x="560" y="67" class="combo hold">Sft+]</text>
+<text x="560" y="56" class="combo tap">
+<tspan x="560" dy="-0.6em" style="font-size: 88%">&amp;@as</tspan><tspan x="560" dy="1.2em" style="font-size: 88%">LS(RBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="462" y="28" width="28" height="26" class="combo"/>
@@ -490,8 +492,9 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="126" y="43" width="28" height="26" class="combo"/>
-<text x="140" y="56" class="combo tap">[</text>
-<text x="140" y="67" class="combo hold">Sft+[</text>
+<text x="140" y="56" class="combo tap">
+<tspan x="140" dy="-0.6em" style="font-size: 88%">&amp;as</tspan><tspan x="140" dy="1.2em" style="font-size: 88%">LS(LBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="182" y="53" width="28" height="26" class="combo"/>
@@ -503,8 +506,9 @@ path.combo {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="546" y="43" width="28" height="26" class="combo"/>
-<text x="560" y="56" class="combo tap">]</text>
-<text x="560" y="67" class="combo hold">Sft+]</text>
+<text x="560" y="56" class="combo tap">
+<tspan x="560" dy="-0.6em" style="font-size: 88%">&amp;@as</tspan><tspan x="560" dy="1.2em" style="font-size: 88%">LS(RBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="462" y="28" width="28" height="26" class="combo"/>
@@ -700,8 +704,9 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="126" y="43" width="28" height="26" class="combo"/>
-<text x="140" y="56" class="combo tap">[</text>
-<text x="140" y="67" class="combo hold">Sft+[</text>
+<text x="140" y="56" class="combo tap">
+<tspan x="140" dy="-0.6em" style="font-size: 88%">&amp;as</tspan><tspan x="140" dy="1.2em" style="font-size: 88%">LS(LBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="182" y="53" width="28" height="26" class="combo"/>
@@ -713,8 +718,9 @@ path.combo {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="546" y="43" width="28" height="26" class="combo"/>
-<text x="560" y="56" class="combo tap">]</text>
-<text x="560" y="67" class="combo hold">Sft+]</text>
+<text x="560" y="56" class="combo tap">
+<tspan x="560" dy="-0.6em" style="font-size: 88%">&amp;@as</tspan><tspan x="560" dy="1.2em" style="font-size: 88%">LS(RBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="462" y="28" width="28" height="26" class="combo"/>
@@ -899,8 +905,9 @@ path.combo {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="126" y="43" width="28" height="26" class="combo"/>
-<text x="140" y="56" class="combo tap">[</text>
-<text x="140" y="67" class="combo hold">Sft+[</text>
+<text x="140" y="56" class="combo tap">
+<tspan x="140" dy="-0.6em" style="font-size: 88%">&amp;as</tspan><tspan x="140" dy="1.2em" style="font-size: 88%">LS(LBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="182" y="53" width="28" height="26" class="combo"/>
@@ -912,8 +919,9 @@ path.combo {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="546" y="43" width="28" height="26" class="combo"/>
-<text x="560" y="56" class="combo tap">]</text>
-<text x="560" y="67" class="combo hold">Sft+]</text>
+<text x="560" y="56" class="combo tap">
+<tspan x="560" dy="-0.6em" style="font-size: 88%">&amp;@as</tspan><tspan x="560" dy="1.2em" style="font-size: 88%">LS(RBKT)</tspan>
+</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="462" y="28" width="28" height="26" class="combo"/>
