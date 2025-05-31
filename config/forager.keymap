@@ -110,7 +110,7 @@
 		COMBO(open_bracket, &as LS(LBKT), 2 12, , 80, 50)
 		COMBO(open_paren, &kp LPAR, 3 13, , 80, 50)
 		COMBO(close_paren, &kp RPAR, 6 16, , 80, 50)
-		COMBO(close_bracket, @as LS(RBKT), 7 17, , 80, 50)
+		COMBO(close_bracket, &as LS(RBKT), 7 17, , 80, 50)
 		COMBO(pg_up, &kp PG_UP, 5 6, , 80, 50)
 		COMBO(pg_dn, &kp PG_DN, 15 16, , 80, 50)
 		COMBO(home, &kp HOME, 4 3, , 80, 50)
