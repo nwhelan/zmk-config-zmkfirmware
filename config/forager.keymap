@@ -14,8 +14,6 @@
 #define AS(keycode) &as LS(keycode) keycode// Autoshift Macro
 #define MEH LS(LC(LALT))
 
-#define ALL NODE_PROP_BITMASK(n, ~0)
-
 &lt {
 	// require-prior-idle-ms = <100>;
 	tapping-term-ms = <150>;
@@ -95,21 +93,20 @@
 		};
 	};
 	
-	#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP, ...) \
+	#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
 	combo_##NAME { \
 		timeout-ms = <TERM>; \
 		bindings = <BINDINGS>; \
 		key-positions = <KEYPOS>; \
 		layers = <LAYERS>; \
 		require-prior-idle-ms = <QUICKTAP>; \
-		__VA_ARGS__ \
 	};
 	
 	combos {
 		compatible = "zmk,combos";
-		COMBO(esc, &kp ESC, 0 1, ALL, 80, 50)
-		COMBO(tab, &kp TAB, 10 11, ALL, 80, 50)
-		COMBO(open_bracket, AS(LBKT), 2 12, ALL, 80, 50)
+		COMBO(esc, &kp ESC, 0 1, , 80, 50)
+		COMBO(tab, &kp TAB, 10 11, , 80, 50)
+		COMBO(open_bracket, AS(LBKT), 2 12, , 80, 50)
 		/* COMBO(open_paren, &kp LPAR, 3 13, , 80, 50)
 		COMBO(close_paren, &kp RPAR, 6 16, , 80, 50)
 		COMBO(close_bracket, &as LS(RBKT) RBKT, 7 17, , 80, 50)
