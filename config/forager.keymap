@@ -113,7 +113,7 @@
 		COMBO(pg_up, &kp PG_UP, 5 6, BASE, 80, 50)
 		COMBO(pg_dn, &kp PG_DN, 15 16, BASE, 80, 50)
 		COMBO(home, &kp HOME, 4 3, BASE, 80, 50)
-		COMBO(end, &kp END, 14 13, BASE, 80, 50) */
+		COMBO(end, &kp END, 14 13, BASE, 80, 50)
 	};
 	
 	conditional_layers {
