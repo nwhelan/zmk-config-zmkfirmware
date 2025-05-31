@@ -146,13 +146,13 @@ combos:
 - p: [10, 11]
   k: TAB
 - p: [2, 12]
-  k: '&as LS(LBKT)'
+  k: {t: '[', h: 'Sft+['}
 - p: [3, 13]
   k: (
 - p: [6, 16]
   k: )
 - p: [7, 17]
-  k: '&as LS(RBKT)'
+  k: {t: ']', h: 'Sft+]'}
 - p: [5, 6]
   k: PG UP
 - p: [15, 16]
