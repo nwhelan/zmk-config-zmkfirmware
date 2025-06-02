@@ -6,7 +6,9 @@
 #define BASE 0
 #define NAV	1
 #define SYM	2
-#define ADJ	3
+#define NUM 3
+#define FN 4
+#define ADJ	5
 
 #define ___ &trans
 #define XXX &none
@@ -91,6 +93,11 @@
 			bindings = <&kp>, <&kp>;
 			hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
 		};
+		nw: num_word {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
+			continue-list = <N0 N1 N2 N3 N4 N5 N6 N7 N8 N9 DOT COMMA FSLH MINUS EQUAL ENTER>;
+		};
 	};
 	
 	#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
@@ -125,12 +132,12 @@
 			then-layer = <3>;
 		};
 	};
-
+	
 	#define HRM_L(PINKY,RING,MIDDLE,INDEX) \
-	{&lhm LGUI PINKY, &lhm LALT RING, &lhm LCTRL MIDDLE, &lhm LSHFT INDEX};
-
+{&lhm LGUI PINKY, &lhm LALT RING, &lhm LCTRL MIDDLE, &lhm LSHFT INDEX};
+	
 	#define HRM_R(PINKY,RING,MIDDLE,INDEX) \
-	{&rhm LSHFT INDEX, &rhm LCTRL MIDDLE, &rhm LALT RING, &rhm LGUI PINKY};
+{&rhm LSHFT INDEX, &rhm LCTRL MIDDLE, &rhm LALT RING, &rhm LGUI PINKY};
 	
 	keymap {
 		compatible = "zmk,keymap";
@@ -141,11 +148,19 @@
 			HRM_L(A, S, D, F)	&kp G	&kp H	HRM_R(J, K, L, APOS)
 			&kp Z	&kp X	&kp C	&kp V	&kp B	&kp N	&kp M	AS(COMMA)	AS(DOT)	AS(FSLH)
 			&kp SPACE	&smart_shift	&lt NUM ENTER	&lt NAV DEL
+			&kp Q	&kp W	&kp E	&kp R	&kp T	&kp Y	&kp U	&kp I	&kp O	&kp P
+			HRM_L(A, S, D, F)	&kp G	&kp H	HRM_R(J, K, L, APOS)
+			&kp Z	&kp X	&kp C	&kp V	&kp B	&kp N	&kp M	AS(COMMA)	AS(DOT)	AS(FSLH)
+			&kp SPACE	&smart_shift	&lt NUM ENTER	&lt NAV DEL
 			>;
 		};
 		
 		nav {
 			bindings = <
+			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
+			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	&kp PAGE_DOWN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp BSLH
+			___	___	___	___	___	___	&kp HOME	&kp END	&kp LC(SPACE)	&kp LC(SPACE)
+			___	&kp LSHFT	&mo SYM	___
 			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
 			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	&kp PAGE_DOWN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp BSLH
 			___	___	___	___	___	___	&kp HOME	&kp END	&kp LC(SPACE)	&kp LC(SPACE)
@@ -161,7 +176,7 @@
 			___	___	&kp LSHFT	&mo NAV
 			>;
 		};
-
+		
 		num {
 			bindings = <
 			XXX	AS(N7)	AS(N8)	AS(N9)	XXX	XXX	AS(N7)	AS(N8)	AS(N9)	XXX
@@ -170,7 +185,7 @@
 			AS(DOT)	AS(N0)	AS(N0)	AS(DOT)
 			>;
 		};
-
+		
 		fn {
 			bindings = <
 			&kp F12	&kp F7	&kp F8	&kp F9	XXX	XXX	&kp F7	&kp F8	&kp F9	XXX
