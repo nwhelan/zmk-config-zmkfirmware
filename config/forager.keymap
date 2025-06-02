@@ -134,10 +134,10 @@
 	};
 	
 	#define HRM_L(PINKY,RING,MIDDLE,INDEX) \
-{&lhm LGUI PINKY, &lhm LALT RING, &lhm LCTRL MIDDLE, &lhm LSHFT INDEX};
+	&lhm LGUI PINKY &lhm LALT RING &lhm LCTRL MIDDLE &lhm LSHFT INDEX
 	
 	#define HRM_R(PINKY,RING,MIDDLE,INDEX) \
-{&rhm LSHFT INDEX, &rhm LCTRL MIDDLE, &rhm LALT RING, &rhm LGUI PINKY};
+	&rhm LSHFT INDEX &rhm LCTRL MIDDLE &rhm LALT RING &rhm LGUI PINKY
 	
 	keymap {
 		compatible = "zmk,keymap";
