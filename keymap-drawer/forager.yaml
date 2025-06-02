@@ -10,17 +10,17 @@ layers:
   - U
   - I
   - O
-  - P
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
+  - P {
+  - {t: 'A,', h: LGUI}
+  - {t: 'S,', h: LALT}
+  - {t: 'D,', h: LCTRL}
+  - {t: 'F};', h: LSHFT}
   - G
-  - H
-  - {t: J, h: LSHIFT}
-  - {t: K, h: LCTRL}
-  - {t: L, h: LALT}
-  - {t: '''', h: LGUI}
+  - H {
+  - {t: 'APOS,', h: LSHFT}
+  - {t: 'L,', h: LCTRL}
+  - {t: 'K,', h: LALT}
+  - {t: 'J};', h: LGUI}
   - Z
   - X
   - C
@@ -33,8 +33,8 @@ layers:
   - {t: /, h: Sft+/}
   - SPACE
   - {t: LSHFT, h: sticky, s: '&caps_word'}
-  - {t: BSPC, h: sym, s: Alt+BSPC}
-  - {t: SPACE, h: nav}
+  - {t: ENTER, h: num}
+  - {t: DEL, h: nav}
   nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,43 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: LSHFT, type: held}
-  - nav
+  - {t: nav, type: held}
+  num:
+  - ''
+  - {t: '7', h: Sft+7}
+  - {t: '8', h: Sft+8}
+  - {t: '9', h: Sft+9}
+  - ''
+  - ''
+  - {t: '7', h: Sft+7}
+  - {t: '8', h: Sft+8}
+  - {t: '9', h: Sft+9}
+  - ''
+  - ''
+  - {t: '4', h: Sft+4}
+  - {t: '5', h: Sft+5}
+  - {t: '6', h: Sft+6}
+  - ''
+  - ''
+  - {t: '4', h: Sft+4}
+  - {t: '5', h: Sft+5}
+  - {t: '6', h: Sft+6}
+  - ''
+  - ''
+  - {t: '1', h: Sft+1}
+  - {t: '2', h: Sft+2}
+  - {t: '3', h: Sft+3}
+  - ''
+  - ''
+  - {t: '1', h: Sft+1}
+  - {t: '2', h: Sft+2}
+  - {t: '3', h: Sft+3}
+  - ''
+  - {t: ., h: Sft+.}
+  - {t: '0', h: Sft+0}
+  - {t: '0', h: Sft+0, type: held}
+  - {t: ., h: Sft+.}
+  fn: [F12, F7, F8, F9, '', '', F7, F8, F9, '', F11, F4, F5, F6, '', '', F4, F5, F6, '', F10, F1, F2, F3, '', '', F1, F2, F3, '', '', '', '', '']
   adj:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -138,9 +174,15 @@ layers:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
+- p: [16, 17]
+  k: ENTER
+  l: [base, nav, num]
+- p: [1, 2]
+  k: BSPC
+  l: [base, nav, num]
 - p: [0, 1]
   k: ESC
   l: [base]
