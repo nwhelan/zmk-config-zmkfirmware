@@ -10,17 +10,17 @@ layers:
   - U
   - I
   - O
-  - P {
-  - {t: 'A,', h: LGUI}
-  - {t: 'S,', h: LALT}
-  - {t: 'D,', h: LCTRL}
-  - {t: 'F};', h: LSHFT}
+  - P
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
   - G
-  - H {
-  - {t: 'APOS,', h: LSHFT}
-  - {t: 'L,', h: LCTRL}
-  - {t: 'K,', h: LALT}
-  - {t: 'J};', h: LGUI}
+  - H
+  - {t: '''', h: LSHFT}
+  - {t: L, h: LCTRL}
+  - {t: K, h: LALT}
+  - {t: J, h: LGUI}
   - Z
   - X
   - C
