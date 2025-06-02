@@ -148,19 +148,11 @@
 			HRM_L(A, S, D, F)	&kp G	&kp H	HRM_R(J, K, L, APOS)
 			&kp Z	&kp X	&kp C	&kp V	&kp B	&kp N	&kp M	AS(COMMA)	AS(DOT)	AS(FSLH)
 			&kp SPACE	&smart_shift	&lt NUM ENTER	&lt NAV DEL
-			&kp Q	&kp W	&kp E	&kp R	&kp T	&kp Y	&kp U	&kp I	&kp O	&kp P
-			HRM_L(A, S, D, F)	&kp G	&kp H	HRM_R(J, K, L, APOS)
-			&kp Z	&kp X	&kp C	&kp V	&kp B	&kp N	&kp M	AS(COMMA)	AS(DOT)	AS(FSLH)
-			&kp SPACE	&smart_shift	&lt NUM ENTER	&lt NAV DEL
 			>;
 		};
 		
 		nav {
 			bindings = <
-			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
-			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	&kp PAGE_DOWN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp BSLH
-			___	___	___	___	___	___	&kp HOME	&kp END	&kp LC(SPACE)	&kp LC(SPACE)
-			___	&kp LSHFT	&mo SYM	___
 			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
 			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	&kp PAGE_DOWN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp BSLH
 			___	___	___	___	___	___	&kp HOME	&kp END	&kp LC(SPACE)	&kp LC(SPACE)
