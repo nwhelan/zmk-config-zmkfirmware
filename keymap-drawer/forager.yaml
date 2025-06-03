@@ -17,7 +17,7 @@ layers:
   - {t: F, h: LSHFT}
   - G
   - H
-  - {t: J, h: LSHIFT}
+  - {t: J, h: LSHFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
   - {t: '''', h: LGUI}
@@ -33,8 +33,8 @@ layers:
   - {t: /, h: Sft+/}
   - SPACE
   - {t: LSHFT, h: sticky, s: '&caps_word'}
-  - {t: BSPC, h: sym, s: Alt+BSPC}
-  - {t: SPACE, h: nav}
+  - '&num_layer'
+  - {t: DEL, h: nav}
   nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -51,11 +51,11 @@ layers:
   - LCTRL
   - LSHIFT
   - {t: ▽, type: trans}
-  - PAGE DOWN
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
+  - UP
   - RIGHT
-  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -63,9 +63,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
+  - PG DN
+  - PG UP
   - END
-  - Ctl+SPACE
-  - Ctl+SPACE
   - {t: ▽, type: trans}
   - LSHFT
   - sym
@@ -104,7 +104,77 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: LSHFT, type: held}
-  - nav
+  - {t: nav, type: held}
+  num:
+  - ''
+  - {t: '7', h: Sft+7}
+  - {t: '8', h: Sft+8}
+  - {t: '9', h: Sft+9}
+  - ''
+  - ''
+  - {t: '7', h: Sft+7}
+  - {t: '8', h: Sft+8}
+  - {t: '9', h: Sft+9}
+  - ''
+  - ''
+  - {t: '4', h: Sft+4}
+  - {t: '5', h: Sft+5}
+  - {t: '6', h: Sft+6}
+  - ''
+  - ''
+  - {t: '4', h: Sft+4}
+  - {t: '5', h: Sft+5}
+  - {t: '6', h: Sft+6}
+  - ''
+  - ''
+  - {t: '1', h: Sft+1}
+  - {t: '2', h: Sft+2}
+  - {t: '3', h: Sft+3}
+  - ''
+  - ''
+  - {t: '1', h: Sft+1}
+  - {t: '2', h: Sft+2}
+  - {t: '3', h: Sft+3}
+  - ''
+  - {t: ., h: Sft+.}
+  - {t: '0', h: Sft+0}
+  - {t: '0', h: Sft+0, type: held}
+  - {t: ., h: Sft+., type: held}
+  fn:
+  - F12
+  - F7
+  - F8
+  - F9
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
   adj:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -138,5 +208,48 @@ layers:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [16, 17]
+  k: ENTER
+  l: [base, nav, num]
+- p: [1, 2]
+  k: BSPC
+  l: [base, nav, num]
+- p: [0, 1]
+  k: ESC
+  l: [base]
+- p: [10, 11]
+  k: TAB
+  l: [base]
+- p: [2, 12]
+  k: {t: '[', h: 'Sft+['}
+  l: [base]
+- p: [3, 13]
+  k: (
+  l: [base]
+- p: [6, 16]
+  k: )
+  l: [base]
+- p: [7, 17]
+  k: {t: ']', h: 'Sft+]'}
+  l: [base]
+- p: [5, 6]
+  k: PG UP
+  l: [base]
+- p: [15, 16]
+  k: PG DN
+  l: [base]
+- p: [4, 3]
+  k: HOME
+  l: [base]
+- p: [14, 13]
+  k: END
+  l: [base]
+- p: [32, 33]
+  k: num
+  l: [base]
+- p: [30, 31]
+  k: fn
+  l: [base]

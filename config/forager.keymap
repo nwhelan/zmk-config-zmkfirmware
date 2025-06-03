@@ -4,17 +4,17 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define NAV  1
-#define SYM  2
-#define ADJ  3
+#define NAV	1
+#define SYM	2
+#define NUM 3
+#define FN 4
+#define ADJ	5
 
 #define ___ &trans
 #define XXX &none
 
-
 #define AS(keycode) &as LS(keycode) keycode// Autoshift Macro
 #define MEH LS(LC(LALT))
-
 
 &lt {
 	// require-prior-idle-ms = <100>;
@@ -52,6 +52,12 @@
 			tapping-term-ms = <200>;
 			flavor = "balanced";
 			bindings = <&kp>, <&kp>;
+		};
+		num_layer: tap_dance_mod_tap {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&lt NUM ENTER>, <&nw>;
 		};
 		sabk: shift_to_alt_backspace {
 			compatible = "zmk,behavior-mod-morph";
@@ -93,6 +99,38 @@
 			bindings = <&kp>, <&kp>;
 			hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
 		};
+		nw: num_word {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
+			continue-list = <N0 N1 N2 N3 N4 N5 N6 N7 N8 N9 DOT COMMA FSLH MINUS EQUAL ENTER>;
+		};
+	};
+	
+	#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
+	combo_##NAME { \
+		timeout-ms = <TERM>; \
+		bindings = <BINDINGS>; \
+		key-positions = <KEYPOS>; \
+		layers = <LAYERS>; \
+		require-prior-idle-ms = <QUICKTAP>; \
+	};
+	
+	combos {
+		compatible = "zmk,combos";
+		COMBO(enter, &kp ENTER, 16 17, BASE NAV NUM, 80, 50)
+		COMBO(bspc, &kp BSPC, 1 2, BASE NAV NUM, 80, 50)
+		COMBO(esc, &kp ESC, 0 1, BASE, 80, 50)
+		COMBO(tab, &kp TAB, 10 11, BASE, 80, 50)
+		COMBO(open_bracket, AS(LBKT), 2 12, BASE, 80, 50)
+		COMBO(open_paren, &kp LPAR, 3 13, BASE, 80, 50)
+		COMBO(close_paren, &kp RPAR, 6 16, BASE, 80, 50)
+		COMBO(close_bracket, AS(RBKT), 7 17, BASE, 80, 50)
+		COMBO(pg_up, &kp PG_UP, 5 6, BASE, 80, 50)
+		COMBO(pg_dn, &kp PG_DN, 15 16, BASE, 80, 50)
+		COMBO(home, &kp HOME, 4 3, BASE, 80, 50)
+		COMBO(end, &kp END, 14 13, BASE, 80, 50)
+		COMBO(num_pad, &mo NUM, 32 33, BASE, 80, 50)
+		COMBO(fn, &mo FN, 30 31, BASE, 80, 50)
 	};
 	
 	conditional_layers {
@@ -103,42 +141,66 @@
 		};
 	};
 	
+	#define HRM_L(PINKY,RING,MIDDLE,INDEX) \
+	&lhm LGUI PINKY &lhm LALT RING &lhm LCTRL MIDDLE &lhm LSHFT INDEX
+	
+	#define HRM_R(INDEX,MIDDLE,RING,PINKY) \
+	&rhm LSHFT INDEX &rhm LCTRL MIDDLE &rhm LALT RING &rhm LGUI PINKY
+	
 	keymap {
 		compatible = "zmk,keymap";
 		
 		base {
 			bindings = <
-			&kp Q           &kp W           &kp E           &kp R           &kp T                                           &kp Y           &kp U           &kp I           &kp O           &kp P
-			&lhm LGUI A     &lhm LALT S    &lhm LCTRL D     &lhm LSHFT F     &kp G                                           &kp H           &rhm LSHIFT J     &rhm LCTRL K     &rhm LALT L    &rhm LGUI APOS
-			&kp Z           &kp X           &kp C           &kp V           &kp B                                           &kp N           &kp M           AS(COMMA)       AS(DOT)         AS(FSLH)
-			&kp SPACE   &smart_shift    &sym_bspc 2 0    &lt NAV SPACE
+			&kp Q      	&kp W	&kp E	&kp R 	&kp T	&kp Y	&kp U      	&kp I	&kp O	&kp P    
+			HRM_L(A,     S,     D,     F)	&kp G	&kp H	    HRM_R(J,     K,     L,     APOS)
+			&kp Z	&kp X	&kp C	&kp V	&kp B	&kp N	&kp M	AS(COMMA)	AS(DOT)	AS(FSLH)
+			&kp SPACE	&smart_shift	&num_layer	&lt NAV DEL
 			>;
 		};
 		
 		nav {
 			bindings = <
-			___          ___          ___          ___          ___                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
-			&kp LGUI        &kp LALT      &kp LCTRL        &kp LSHIFT    ___                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
-			___          ___          ___          ___          ___                                          ___          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
-			___         &kp LSHFT       &mo SYM  ___
+			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
+			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	___	&kp LEFT	&kp DOWN	&kp UP	&kp RIGHT
+			___	___	___	___	___	___	&kp HOME	&kp PG_DN	&kp PG_UP	&kp END
+			___	&kp LSHFT	&mo SYM	___
 			>;
 		};
 		
 		sym {
 			bindings = <
-			AS(N1)          AS(N2)          AS(N3)          AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
-			AS(GRAVE)       &sk LCTRL       &sk LALT        &sk LGUI        &sk LC(LALT)                                    AS(BSLH)        AS(MINUS)       AS(EQUAL)       AS(LBKT)        AS(RBKT)
-			___          ___          ___          ___          ___                                          ___          ___          ___          ___          &kp ENTER
-			___          ___          &kp LSHFT       &mo NAV
+			AS(N1)	AS(N2)	AS(N3)	AS(N4)	AS(N5)	AS(N6)	AS(N7)	AS(N8)	AS(N9)	AS(N0)
+			AS(GRAVE)	&sk LCTRL	&sk LALT	&sk LGUI	&sk LC(LALT)	AS(BSLH)	AS(MINUS)	AS(EQUAL)	AS(LBKT)	AS(RBKT)
+			___	___	___	___	___	___	___	___	___	&kp ENTER
+			___	___	&kp LSHFT	&mo NAV
+			>;
+		};
+		
+		num {
+			bindings = <
+			XXX	AS(N7)	AS(N8)	AS(N9)	XXX	XXX	AS(N7)	AS(N8)	AS(N9)	XXX
+			XXX	AS(N4)	AS(N5)	AS(N6)	XXX	XXX	AS(N4)	AS(N5)	AS(N6)	XXX
+			XXX	AS(N1)	AS(N2)	AS(N3)	XXX	XXX	AS(N1)	AS(N2)	AS(N3)	XXX
+			AS(DOT)	AS(N0)	AS(N0)	AS(DOT)
+			>;
+		};
+		
+		fn {
+			bindings = <
+			&kp F12	&kp F7	&kp F8	&kp F9	XXX	XXX	&kp F7	&kp F8	&kp F9	XXX
+			&kp F11	&kp F4	&kp F5	&kp F6	XXX	XXX	&kp F4	&kp F5	&kp F6	XXX
+			&kp F10	&kp F1	&kp F2	&kp F3	XXX	XXX	&kp F1	&kp F2	&kp F3	XXX
+			XXX	XXX	XXX	XXX
 			>;
 		};
 		
 		adj {
 			bindings = <
-			&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     ___          ___          &kp C_BRI_DN    &kp C_BRI_UP
-			&studio_unlock  ___          ___          ___          ___                                          ___          ___          ___          &kp C_VOL_DN    &kp C_VOL_UP
-			&bootloader     ___          ___          ___          ___                                          ___          ___          ___          ___          &bootloader
-			___          ___          ___          ___
+			&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_CLR_ALL	&kp C_SLEEP	___	___	&kp C_BRI_DN	&kp C_BRI_UP
+			&studio_unlock	___	___	___	___	___	___	___	&kp C_VOL_DN	&kp C_VOL_UP
+			&bootloader	___	___	___	___	___	___	___	___	&bootloader
+			___	___	___	___
 			>;
 		};
 	};
