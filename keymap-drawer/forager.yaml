@@ -14,13 +14,13 @@ layers:
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
-  - {t: F;, h: LSHFT}
+  - {t: F, h: LSHFT}
   - G
   - H
   - {t: '''', h: LSHFT}
   - {t: L, h: LCTRL}
   - {t: K, h: LALT}
-  - {t: J;, h: LGUI}
+  - {t: J, h: LGUI}
   - Z
   - X
   - C
