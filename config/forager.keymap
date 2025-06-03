@@ -162,7 +162,7 @@
 		nav {
 			bindings = <
 			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
-			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	___	&kp DOWN	&kp DOWN	&kp UP	&kp right
+			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	___	&kp LEFT	&kp DOWN	&kp UP	&kp RIGHT
 			___	___	___	___	___	___	&kp HOME	&kp PG_DN	&kp PG_UP	&kp END
 			___	&kp LSHFT	&mo SYM	___
 			>;
