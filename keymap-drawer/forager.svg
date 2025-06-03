@@ -184,7 +184,7 @@ path.combo {
 </g>
 <g transform="translate(196, 94)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">F</text>
+<text x="0" y="0" class="key tap">F;</text>
 <text x="0" y="24" class="key hold">LSHFT</text>
 </g>
 <g transform="translate(252, 100)" class="key keypos-14">
@@ -212,7 +212,7 @@ path.combo {
 </g>
 <g transform="translate(672, 118)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">J</text>
+<text x="0" y="0" class="key tap">J;</text>
 <text x="0" y="24" class="key hold">LGUI</text>
 </g>
 <g transform="translate(28, 174)" class="key keypos-20">
@@ -270,10 +270,8 @@ path.combo {
 </g>
 <g transform="translate(402, 258) rotate(-25.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ENTER</text>
-<a href="#num">
-<text x="0" y="24" class="key hold layer-activator">num</text>
-</a></g>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;num_layer</tspan></text>
+</g>
 <g transform="translate(448, 224) rotate(-25.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
@@ -805,10 +803,10 @@ path.combo {
 <text x="0" y="0" class="key held tap">0</text>
 <text x="0" y="24" class="key held hold">Sft+0</text>
 </g>
-<g transform="translate(448, 224) rotate(-25.0)" class="key keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">.</text>
-<text x="0" y="24" class="key hold">Sft+.</text>
+<g transform="translate(448, 224) rotate(-25.0)" class="key held keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">.</text>
+<text x="0" y="24" class="key held hold">Sft+.</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="518" y="76" width="28" height="26" class="combo"/>
