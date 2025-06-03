@@ -51,11 +51,11 @@ layers:
   - LCTRL
   - LSHIFT
   - {t: ▽, type: trans}
-  - PAGE DOWN
-  - LEFT
+  - {t: ▽, type: trans}
   - DOWN
-  - RIGHT
-  - \
+  - DOWN
+  - UP
+  - right
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -63,9 +63,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
+  - PG DN
+  - PG UP
   - END
-  - Ctl+SPACE
-  - Ctl+SPACE
   - {t: ▽, type: trans}
   - LSHFT
   - sym
@@ -140,7 +140,41 @@ layers:
   - {t: '0', h: Sft+0}
   - {t: '0', h: Sft+0, type: held}
   - {t: ., h: Sft+., type: held}
-  fn: [F12, F7, F8, F9, '', '', F7, F8, F9, '', F11, F4, F5, F6, '', '', F4, F5, F6, '', F10, F1, F2, F3, '', '', F1, F2, F3, '', '', '', '', '']
+  fn:
+  - F12
+  - F7
+  - F8
+  - F9
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
   adj:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -212,4 +246,10 @@ combos:
   l: [base]
 - p: [14, 13]
   k: END
+  l: [base]
+- p: [32, 33]
+  k: num
+  l: [base]
+- p: [30, 31]
+  k: fn
   l: [base]
