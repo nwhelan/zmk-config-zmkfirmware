@@ -1,26 +1,26 @@
 layout: {zmk_keyboard: forager}
 layers:
   base:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - Q,
+  - W,
+  - E,
+  - R,
+  - T,
+  - Y,
+  - U,
+  - I,
+  - O,
+  - P,
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LSHFT}
   - G
   - H
-  - {t: '''', h: LSHFT}
-  - {t: L, h: LCTRL}
-  - {t: K, h: LALT}
-  - {t: J, h: LGUI}
+  - {t: J, h: LSHFT}
+  - {t: K, h: LCTRL}
+  - {t: L, h: LALT}
+  - {t: '''', h: LGUI}
   - Z
   - X
   - C
