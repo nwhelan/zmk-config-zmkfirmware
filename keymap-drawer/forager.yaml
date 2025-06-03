@@ -52,10 +52,10 @@ layers:
   - LSHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DOWN
+  - LEFT
   - DOWN
   - UP
-  - right
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
