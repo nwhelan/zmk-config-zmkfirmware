@@ -129,6 +129,8 @@
 		COMBO(pg_dn, &kp PG_DN, 15 16, BASE, 80, 50)
 		COMBO(home, &kp HOME, 4 3, BASE, 80, 50)
 		COMBO(end, &kp END, 14 13, BASE, 80, 50)
+		COMBO(num_pad, &mo NUM, 32 33, BASE, 80, 50)
+		COMBO(fn, &mo FN, 30 31, BASE, 80, 50)
 	};
 	
 	conditional_layers {
@@ -160,8 +162,8 @@
 		nav {
 			bindings = <
 			___	___	___	___	___	&kp PAGE_UP	&kp LC(PG_UP)	&kp UP	&kp LC(PG_DN)	&kp DELETE
-			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	&kp PAGE_DOWN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp BSLH
-			___	___	___	___	___	___	&kp HOME	&kp END	&kp LC(SPACE)	&kp LC(SPACE)
+			&kp LGUI	&kp LALT	&kp LCTRL	&kp LSHIFT	___	___	&kp DOWN	&kp DOWN	&kp UP	&kp right
+			___	___	___	___	___	___	&kp HOME	&kp PG_DN	&kp PG_UP	&kp END
 			___	&kp LSHFT	&mo SYM	___
 			>;
 		};
