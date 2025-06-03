@@ -140,10 +140,10 @@
 	};
 	
 	#define HRM_L(PINKY,RING,MIDDLE,INDEX) \
-	&lhm LGUI PINKY &lhm LALT RING &lhm LCTRL MIDDLE &lhm LSHFT INDEX
+	&lhm LGUI PINKY &lhm LALT RING &lhm LCTRL MIDDLE &lhm LSHFT INDEX;
 	
 	#define HRM_R(PINKY,RING,MIDDLE,INDEX) \
-	&rhm LSHFT INDEX &rhm LCTRL MIDDLE &rhm LALT RING &rhm LGUI PINKY
+	&rhm LSHFT INDEX &rhm LCTRL MIDDLE &rhm LALT RING &rhm LGUI PINKY;
 	
 	keymap {
 		compatible = "zmk,keymap";
@@ -153,7 +153,7 @@
 			&kp Q	&kp W	&kp E	&kp R	&kp T	&kp Y	&kp U	&kp I	&kp O	&kp P
 			HRM_L(A, S, D, F)	&kp G	&kp H	HRM_R(J, K, L, APOS)
 			&kp Z	&kp X	&kp C	&kp V	&kp B	&kp N	&kp M	AS(COMMA)	AS(DOT)	AS(FSLH)
-			&kp SPACE	&smart_shift	num_layer	&lt NAV DEL
+			&kp SPACE	&smart_shift	&num_layer	&lt NAV DEL
 			>;
 		};
 		
