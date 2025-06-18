@@ -4,28 +4,28 @@
 		
 		base {
 			bindings = <
-			&kp Q           &kp W           &kp E           &kp R           &kp T                                           &kp Y           &kp U           &kp I           &kp O           &kp P
-			&lhm LGUI A     &lhm LALT S    &lhm LCTRL D     &lhm LSHFT F     &kp G                                           &kp H           &rhm LSHIFT J     &rhm LCTRL K     &rhm LALT L    &rhm LGUI APOS
-			&kp Z           &kp X           &kp C           &kp V           &kp B                                           &kp N           &kp M           AS(COMMA)       AS(DOT)         AS(FSLH)
-			&kp SPACE   &smart_shift    &sym_bspc 2 0    &lt NAV SPACE
+			&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     ___          ___          &kp C_BRI_DN    &kp C_BRI_UP
+			&studio_unlock  ___          ___          ___          ___                                          ___          ___          ___          &kp C_VOL_DN    &kp C_VOL_UP
+			&bootloader     ___          ___          ___          ___                                          ___          ___          ___          ___          &bootloader
+			___          ___          ___          ___
 			>;
 		};
 		
 		nav {
 			bindings = <
-			___          ___          ___          ___          ___                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
-			&kp LGUI        &kp LALT      &kp LCTRL        &kp LSHIFT    ___                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
-			___          ___          ___          ___          ___                                          ___          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
-			___         &kp LSHFT       &mo SYM  ___
+			&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     ___          ___          &kp C_BRI_DN    &kp C_BRI_UP
+			&studio_unlock  ___          ___          ___          ___                                          ___          ___          ___          &kp C_VOL_DN    &kp C_VOL_UP
+			&bootloader     ___          ___          ___          ___                                          ___          ___          ___          ___          &bootloader
+			___          ___          ___          ___
 			>;
 		};
 		
 		sym {
 			bindings = <
-			AS(N1)          AS(N2)          AS(N3)          AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
-			AS(GRAVE)       &sk LCTRL       &sk LALT        &sk LGUI        &sk LC(LALT)                                    AS(BSLH)        AS(MINUS)       AS(EQUAL)       AS(LBKT)        AS(RBKT)
-			___          ___          ___          ___          ___                                          ___          ___          ___          ___          &kp ENTER
-			___          ___          &kp LSHFT       &mo NAV
+			&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     ___          ___          &kp C_BRI_DN    &kp C_BRI_UP
+			&studio_unlock  ___          ___          ___          ___                                          ___          ___          ___          &kp C_VOL_DN    &kp C_VOL_UP
+			&bootloader     ___          ___          ___          ___                                          ___          ___          ___          ___          &bootloader
+			___          ___          ___          ___
 			>;
 		};
 		
