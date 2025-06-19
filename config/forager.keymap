@@ -2,6 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <32 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,19 +45,19 @@
 
         fn {
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans     &trans     &trans    &trans
-&kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans     &trans     &trans    &trans
-                         &trans  &trans    &trans  &trans
+&kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
+&kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans     &trans     &trans    &trans
+                         &trans  &trans             &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY  &kp K_CUT  &kp K_UNDO
+&trans  &trans  &trans  &trans  &trans    &kp CAPS    &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT
+&trans  &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
+                        &trans  &trans    &kp RETURN  &kp BACKSPACE
             >;
         };
     };
