@@ -1,74 +1,109 @@
 layout: {zmk_keyboard: forager}
 layers:
   base: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, '''', Z, X, C, V, B, N, M, ',', ., /, SPACE, TAB, RET, BSPC]
-  num:
+  extra:
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num:
+  - '['
   - '7'
   - '8'
   - '9'
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ;
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - LSHFT
   - LCTRL
   - LALT
   - LGUI
-  - {t: ▽, type: trans}
+  - '`'
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - .
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   sym:
-  - {t: ▽, type: trans}
+  - '{'
   - Sft+&
   - Sft+*
   - Sft+(
+  - Sft+}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 'Sft+:'
   - Sft+$
   - Sft+%
   - Sft+^
-  - {t: ▽, type: trans}
+  - Sft++
   - {t: ▽, type: trans}
   - LSHFT
   - LCTRL
   - LALT
   - LGUI
-  - {t: ▽, type: trans}
+  - Sft+~
   - Sft+!
   - Sft+@
   - Sft+#
-  - {t: ▽, type: trans}
+  - Sft+|
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+)
-  - {t: ▽, type: trans}
+  - Sft+_
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   fn:
@@ -107,7 +142,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   nav:
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
