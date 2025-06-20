@@ -73,37 +73,37 @@ layers:
   - {t: ▽, type: trans}
   sym:
   - '{'
-  - Sft+&
-  - Sft+*
-  - Sft+(
-  - Sft+}
+  - '&'
+  - '*'
+  - (
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 'Sft+:'
-  - Sft+$
-  - Sft+%
-  - Sft+^
-  - Sft++
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
   - {t: ▽, type: trans}
   - LSHFT
   - LCTRL
   - LALT
   - LGUI
-  - Sft+~
-  - Sft+!
-  - Sft+@
-  - Sft+#
-  - Sft+|
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+)
-  - Sft+_
+  - )
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   fn:
