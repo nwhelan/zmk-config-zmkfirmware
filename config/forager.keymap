@@ -37,6 +37,24 @@
         };
     };
 
+    behaviors {
+        auto_shift: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+        };
+
+        caps_number: caps_number {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_NUMBER";
+            #binding-cells = <0>;
+            continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0 MINUS EQUAL PLUS FSLH DOT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
