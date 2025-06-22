@@ -1,37 +1,37 @@
 layout: {zmk_keyboard: forager}
 layers:
-  base: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, '''', Z, X, C, V, B, N, M, ',', ., /, SPACE, TAB, RET, BSPC]
-  extra:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  qwerty: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, '''', Z, X, C, V, B, N, M, ',', ., /, SPACE, TAB, RET, BSPC]
+  colemak-dh:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,3 +179,14 @@ layers:
 combos:
 - p: [32, 33]
   k: DEL
+- p: [30, 31]
+  k: .
+  l: [num]
+- p: [16, 17]
+  k: ENTER
+- p: [6, 7]
+  k: BACKSPACE
+- p: [12, 13]
+  k: TAB
+- p: [2, 3]
+  k: ESCAPE
