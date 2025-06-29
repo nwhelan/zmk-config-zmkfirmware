@@ -1,6 +1,40 @@
 layout: {zmk_keyboard: forager}
 layers:
-  qwerty: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, '''', Z, X, C, V, B, N, M, ',', ., /, SPACE, TAB, RET, BSPC]
+  qwerty:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - SPACE
+  - {t: num, h: sticky}
+  - {t: nav, h: sticky}
+  - {t: fn, h: sticky}
   colemak-dh:
   - Q
   - W
@@ -68,7 +102,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - '-'
+  - {t: '-', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   sym:
@@ -140,7 +174,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   nav:
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -152,10 +186,10 @@ layers:
   - COPY
   - CUT
   - UNDO
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LGUI
+  - LEFT ALT
+  - LCTRL
+  - LSHFT
   - {t: ▽, type: trans}
   - CAPS
   - LEFT
@@ -174,7 +208,7 @@ layers:
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RETURN
+  - {t: RETURN, type: held}
   - BACKSPACE
 combos:
 - p: [32, 33]
