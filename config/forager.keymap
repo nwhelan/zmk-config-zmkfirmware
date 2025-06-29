@@ -60,10 +60,10 @@
 
         qwerty {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R      &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F      &kp G      &kp H    &kp J     &kp K      &kp L    &kp SQT
-&kp Z  &kp X  &kp C  &kp V      &kp B      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH
-                     &kp SPACE  &kp TAB    &kp RET  &kp BSPC
+&kp Q  &kp W  &kp E  &kp R      &kp T    &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J  &kp K      &kp L    &kp SQT
+&kp Z  &kp X  &kp C  &kp V      &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                     &kp SPACE  &sl 2    &sl 5  &sl 4
             >;
 
             label = "qwerty";
@@ -107,10 +107,10 @@
 
         nav {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY  &kp K_CUT  &kp K_UNDO
-&trans       &trans  &trans  &trans  &trans    &kp CAPS    &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT
-&trans       &trans  &trans  &trans  &trans    &kp INSERT  &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                             &trans  &trans    &kp RETURN  &kp BACKSPACE
+&bootloader  &trans        &trans     &trans     &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY  &kp K_CUT  &kp K_UNDO
+&kp LGUI     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS    &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT
+&trans       &trans        &trans     &trans     &trans    &kp INSERT  &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
+                                      &trans     &trans    &kp RETURN  &kp BACKSPACE
             >;
         };
     };
